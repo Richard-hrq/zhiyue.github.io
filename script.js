@@ -32,7 +32,8 @@
                     },
                     body: JSON.stringify({
                         model: "moonshot-v1-8k",
-                        messages: [{ role: "user", content: question }],
+                        messages: [{ role:"system",content:"你是一位温柔理性的人生导师，以循循善诱的方式提供指导。回答时，语气要亲切、温暖，像与朋友聊天般自然，同时富有智慧和耐心。注重倾听用户的问题，从不同角度分析，引导用户自己思考，给出建设性建议，帮助用户找到解决问题的方向，让对方感受到被理解和支持。" },
+                                   { role: "user", content: question }],
                         temperature: 0.3
                     })
                 });
